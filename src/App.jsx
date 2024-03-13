@@ -5,24 +5,7 @@ function App() {
   const [challenges, setChallenges] = useState(fakeDatabase.challenges);
 
   const handleUpdateComplexity = (id, type) => {
-    const challengesArray = challenges.map((item) => {
-      if (type === "minus") {
-        if(item.complexity > 0){
-          if (item.id === id) {
-            item.complexity--;
-          }
-        }
-      }
-      if (type === "plus") {
-        if(item.complexity < 100){
-          if (item.id === id) {
-            item.complexity++;
-          }
-        }
-      }
-      return item
-    });
-    setChallenges(challengesArray)
+   //тут твой код
   };
 
   return (
